@@ -1,0 +1,31 @@
+{
+    "saige_pipeline_ps.combine.blacklist": "SANDBOX_IVM/jiwoo/saige_healthcare_cost/nullfile.txt",
+    "saige_pipeline_ps.combine.bp_col": "pos",
+    "saige_pipeline_ps.combine.chrcol": "#chrom",
+    "saige_pipeline_ps.combine.info_threshold": 0.6,
+    "saige_pipeline_ps.combine.loglog_pval": 10,
+    "saige_pipeline_ps.combine.p_valcol": "pval",
+    "saige_pipeline_ps.combine.cpu": 1, 
+    "saige_pipeline_ps.combine,mem": 7,
+
+    "saige_pipeline_ps.docker": "eu.gcr.io/finngen-sandbox-v3-containers/saige:0.36.3.2.finngen.counts.2",
+    "saige_pipeline_ps.list_bgen": "SANDBOX_IVM/jiwoo/saige_healthcare_cost/r8_bgen_filelist.txt",
+    "saige_pipeline_ps.list_bgenind": "SANDBOX_IVM/jiwoo/saige_healthcare_cost/r8_bgen_index_filelist.txt",
+    "saige_pipeline_ps.loco": "FALSE",
+
+    "saige_pipeline_ps.null.bedfile": "LIBRARY_RED/finngen_R8/grm_1.0/R8_GRM_V0_LD_0.1.bed",
+    "saige_pipeline_ps.null.covariates": "AGE_AT_DEATH_OR_END_OF_FOLLOWUP,SEX,SEXAGE,AGE_AT_DEATH_OR_END_OF_FOLLOWUP2,AGE_AT_DEATH_OR_END_OF_FOLLOWUP_SQUARED_SEX,BIRTH_YEAR,BIRTH_YEAR_SQUARED,BIRTH_YEAR_CUBED,LENGTH_OF_FU,LENGTH_OF_FU_SQUARED,LENGTH_OF_FU_CUBED,PC1,PC2,PC3,PC4,PC5,PC6,PC7,PC8,PC9,PC10,BATCH_AxiomGT1_b01_V2P2,BATCH_AxiomGT1_b02_V2P2,BATCH_AxiomGT1_b03_V2P2,BATCH_AxiomGT1_b04_V2P2,BATCH_AxiomGT1_b05_V2P2,BATCH_AxiomGT1_b06_V2P2,BATCH_AxiomGT1_b07_V2P2,BATCH_AxiomGT1_b08_V2P2,BATCH_AxiomGT1_b09_V2P2,BATCH_AxiomGT1_b10_V2P2,BATCH_AxiomGT1_b11_V2P2,BATCH_AxiomGT1_b12_V2P2,BATCH_AxiomGT1_b13_V2P2,BATCH_AxiomGT1_b14_V2P2,BATCH_AxiomGT1_b15_V2P2,BATCH_AxiomGT1_b16_V2P2,BATCH_AxiomGT1_b17_V2P2,BATCH_AxiomGT1_b18_V2P2,BATCH_AxiomGT1_b19_V2P2,BATCH_AxiomGT1_b20_V2P2,BATCH_AxiomGT1_b21_V2P2,BATCH_AxiomGT1_b22_V2P2,BATCH_AxiomGT1_b23_V2P2,BATCH_AxiomGT1_b24_V2P2,BATCH_AxiomGT1_b25_V2P2,BATCH_AxiomGT1_b26_V2P2,BATCH_AxiomGT1_b27_V2P2,BATCH_AxiomGT1_b28_V2P2,BATCH_AxiomGT1_b29_V2P2,BATCH_AxiomGT1_b30_V2P2,BATCH_AxiomGT1_b31_V2,BATCH_AxiomGT1_b3234_V2,BATCH_AxiomGT1_b33_V2,BATCH_AxiomGT1_b35_V2,BATCH_AxiomGT1_b36_V2,BATCH_AxiomGT1_b37_V2,BATCH_AxiomGT1_b38_V2,BATCH_AxiomGT1_b39_V2,BATCH_AxiomGT1_b40_V2,BATCH_AxiomGT1_b41_V2,BATCH_AxiomGT1_b42_V2,BATCH_AxiomGT1_b43_V2,BATCH_AxiomGT1_b44_V2,BATCH_AxiomGT1_b45_V2,BATCH_AxiomGT1_b46_V2,BATCH_AxiomGT1_b47_V2,BATCH_AxiomGT1_b48_V2,BATCH_AxiomGT1_b49_V2,BATCH_AxiomGT1_b50_V2,BATCH_AxiomGT1_b51_V2,BATCH_AxiomGT1_b52_V2,BATCH_AxiomGT1_b53_V3,BATCH_AxiomGT1_b54_V3,BATCH_AxiomGT1_b55_V3,BATCH_AxiomGT1_b56_V3,BATCH_AxiomGT1_b57_V3,BATCH_AxiomGT1_b58_V3,BATCH_AxiomGT1_b59_V3,BATCH_AxiomGT1_b60_V3,BATCH_AxiomGT1_b61_V3,BATCH_AxiomGT1_b62_V3,BATCH_AxiomGT1_b63_V3,BATCH_AxiomGT1_b64_V3,BATCH_AxiomGT1_b65_V4,BATCH_AxiomGT1_b66_V4,BATCH_AxiomGT1_b67_V4,BATCH_AxiomGT1_b68_V4,BATCH_AxiomGT1_b69_V4,BATCH_AxiomGT1_b70_V4,BATCH_AxiomGT1_b71_V4,BATCH_AxiomGT1_b72_V4,BATCH_DS1_BOTNIA_Dgi_norm,BATCH_DS10_FINRISK_Palotie_norm,BATCH_DS11_FINRISK_PredictCVD_COROGENE_Tarto_norm,BATCH_DS12_FINRISK_Summit_norm,BATCH_DS13_FINRISK_Bf_norm,BATCH_DS14_GENERISK_norm,BATCH_DS15_H2000_Broad_norm,BATCH_DS16_H2000_Fimm_norm,BATCH_DS17_H2000_Genmets_norm,BATCH_DS18_MIGRAINE_1_norm,BATCH_DS19_MIGRAINE_2_norm,BATCH_DS2_BOTNIA_T2dgo_norm,BATCH_DS20_SUPER_1_norm,BATCH_DS21_SUPER_2_norm,BATCH_DS22_TWINS_1_norm,BATCH_DS23_TWINS_2_norm,BATCH_DS24_SUPER_3_norm,BATCH_DS25_BOTNIA_Regeneron_norm,BATCH_DS3_COROGENE_Sanger_norm,BATCH_DS4_FINRISK_Corogene_norm,BATCH_DS5_FINRISK_Engage_norm,BATCH_DS6_FINRISK_FR02_Broad_norm,BATCH_DS7_FINRISK_FR12_norm,BATCH_DS8_FINRISK_Finpcga_norm,BATCH_DS9_FINRISK_Mrpred_norm",
+    "saige_pipeline_ps.null.cpu": 32,
+    "saige_pipeline_ps.null.mem": 7,
+    "saige_pipeline_ps.null.minCovariateCount": 10,
+    "saige_pipeline_ps.null.phenofile": "SANDBOX_IVM/jiwoo/saige_healthcare_cost/healthcare_cost_20211122.txt",
+    "saige_pipeline_ps.null.ratioCVcutoff": 0.001,
+    "saige_pipeline_ps.null.sampleID": "FINNGENID",
+    "saige_pipeline_ps.null.traceCVcutoff": 0.0025,
+
+    "saige_pipeline_ps.phenolistfile": "SANDBOX_IVM/jiwoo/saige_healthcare_cost/phenolist.txt",
+    "saige_pipeline_ps.test.analysisType": "additive",
+    "saige_pipeline_ps.test.minmac": 5,
+    "saige_pipeline_ps.test.samplefile": "SANDBOX_IVM/jiwoo/saige_healthcare_cost/finngen_r8_bgen_sample_list.txt",
+    "saige_pipeline_ps.traitType": "quantitative"
+}
